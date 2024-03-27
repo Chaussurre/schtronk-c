@@ -1,5 +1,5 @@
-use std::fmt::{Debug, Display, Formatter, Write};
 use super::parser_builder::*;
+use std::fmt::{Debug, Display, Formatter, Write};
 
 #[derive(Eq, PartialEq)]
 pub enum OpCode {

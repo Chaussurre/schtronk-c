@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6dbf20c1-c092-4e4f-9a9a-d5a5abb0a58d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ast/identifiers.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/input_reader.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/assigment_tests.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/op_code.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/op_code.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser_tests.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/expression_tests.rs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cfgrammar-0.13.4/src/lib/idxnewtype.rs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/.cargo/registry/src/index.crates.io-6f17d22bba15001f/lrpar-0.13.4/src/lib/ctbuilder.rs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/.cargo/registry/src/index.crates.io-6f17d22bba15001f/lrtable-0.13.4/src/lib/statetable.rs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ast.rs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main.rs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="6y40epen" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2dy7UuTT6VrXmqP8q8HNxsWUf7p" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Cargo.Build Logs.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Build `Run schtronk-c`.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Debug Build process.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Expand build_script_build.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Expand schtronk_c::parse::parse_tree.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Expand schtronk_c::parse::tree.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run No Inline.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run schtronk-c.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test parser_tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::assigment_tests::parsing_assignment.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Tests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;LALRPOP&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;org.rust.disableDetachedFileInspectionC:/Users/samue/Documents/Rust projects/schtronk-c/build.rs&quot;: &quot;true&quot;,
+    &quot;org.rust.disableDetachedFileInspectionC:/Users/samue/Documents/Rust projects/schtronk-c/src/ast.rs&quot;: &quot;true&quot;,
+    &quot;org.rust.disableDetachedFileInspectionC:/Users/samue/Documents/Rust projects/schtronk-c/src/main.rs&quot;: &quot;true&quot;,
+    &quot;org.rust.disableDetachedFileInspectionC:/Users/samue/Documents/Rust projects/schtronk-c/src/parser_tests/expression_tests.rs&quot;: &quot;true&quot;,
+    &quot;org.rust.disableDetachedFileInspectionC:/Users/samue/Documents/Rust projects/schtronk-c/src/parser_tests/main.rs&quot;: &quot;true&quot;,
+    &quot;org.rust.disableDetachedFileInspectionC:/Users/samue/Documents/Rust projects/schtronk-c/src/parser_tests/mod.rs&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Rust&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\samue\Documents\Rust projects\schtronk-c\src" />
+      <recent name="C:\Users\samue\Documents\Rust projects\schtronk-c\tests" />
+      <recent name="C:\Users\samue\Documents\Rust projects\schtronk-c\src\parse\operator" />
+      <recent name="C:\Users\samue\Documents\Rust projects\schtronk-c" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cargo.Run">
+    <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command" focusToolWindowBeforeRun="true">
+      <option name="command" value="run" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="false" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="Tests" run_configuration_type="CargoCommandRunConfiguration" />
+      </method>
+    </configuration>
+    <configuration name="Tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="command" value="test" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="false" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="FULL" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Cargo.Run" />
+      <item itemvalue="Cargo.Tests" />
+    </list>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6dbf20c1-c092-4e4f-9a9a-d5a5abb0a58d" name="Changes" comment="" />
+      <created>1710968484408</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710968484408</updated>
+      <workItem from="1710968485827" duration="7263000" />
+      <workItem from="1711006950074" duration="11409000" />
+      <workItem from="1711029944839" duration="9730000" />
+      <workItem from="1711099228555" duration="32950000" />
+      <workItem from="1711461462535" duration="8825000" />
+      <workItem from="1711474546943" duration="16695000" />
+      <workItem from="1711494766151" duration="7138000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.y" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$USER_HOME$/.cargo/registry/src/index.crates.io-6f17d22bba15001f/lalrpop-util-0.20.2/src/state_machine.rs</url>
+          <line>236</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

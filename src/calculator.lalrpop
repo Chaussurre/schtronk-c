@@ -1,0 +1,41 @@
+use crate::ast::parser_builder::*;
+
+grammar;
+
+pub Prog: Ast = {
+    <Expr>,
+    <Assignation>,
+}
+
+Assignation: Ast = {
+    "let" <Identifier> "=" <Expr> => parse_assignment(<>),
+}
+
+Expr: Ast = {
+    #[precedence(level="1")]
+    Value,
+
+    #[precedence(level="2")] #[assoc(side="left")]
+    <Expr> <OpCodeFactor> <Expr> => parse_op(<>),
+    #[precedence(level="3")] #[assoc(side="left")]
+    <Expr> <OpCodeTerm> <Expr> => parse_op(<>),
+};
+
+OpCodeTerm: OpCode = {
+    "+" => Add,
+    "-" => Sub,
+}
+
+OpCodeFactor: OpCode = {
+    "*" => Mul,
+    "/" => Div,
+}
+
+Value: Ast = {
+    Num,
+    <Identifier> => Variable(<>),
+    "(" <Expr> ")",
+}
+
+Num: Ast = r"[0-9]+" => Number(<>.parse::<i32>().unwrap());
+Identifier: Identifier = r"[a-zA-Z_]\w*" => Identifier::from(<>);
