@@ -16,7 +16,7 @@ impl Input {
             Err(error) => {
                 eprintln!("Invalid input: {:?}", error);
                 Some(Error(error))
-            },
+            }
             Ok(End) => None,
             Ok(input) => Some(input),
         }
@@ -29,9 +29,13 @@ impl Input {
         }
     }
 
-    fn read_input(prompt: &str, stdin: &mut StdinLock, stdout: &mut StdoutLock) -> io::Result<Self> {
+    fn read_input(
+        prompt: &str,
+        stdin: &mut StdinLock,
+        stdout: &mut StdoutLock,
+    ) -> io::Result<Self> {
         let mut input = String::new();
-        stdout.write(prompt.as_ref())?;
+        stdout.write_all(prompt.as_ref())?;
         stdout.flush()?;
 
         let size = stdin.read_line(&mut input)?;

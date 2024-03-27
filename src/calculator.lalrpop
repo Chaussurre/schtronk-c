@@ -1,6 +1,6 @@
 use crate::ast::parser_builder::*;
 
-grammar;
+grammar(symbols: &mut SymbolsTable);
 
 pub Prog: Ast = {
     <Expr>,
@@ -8,7 +8,7 @@ pub Prog: Ast = {
 }
 
 Assignation: Ast = {
-    "let" <Identifier> "=" <Expr> => parse_assignment(<>),
+    "let" <Identifier> "=" <Expr> => parse_assignment(symbols, <>),
 }
 
 Expr: Ast = {

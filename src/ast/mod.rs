@@ -13,12 +13,15 @@ pub mod parser_builder {
 
     pub use super::parse_assignment;
     pub use super::parse_op;
+    pub use crate::symbols_table::SymbolsTable;
 }
 
 pub mod parser_user {
-    use lalrpop_util::lalrpop_mod;lalrpop_mod!(pub calculator); // synthesized by LALRPOP my beloved <3
+    use lalrpop_util::lalrpop_mod;
+    lalrpop_mod!(pub calculator); // synthesized by LALRPOP my beloved <3
 
     pub use super::Ast;
+    pub use crate::symbols_table::SymbolsTable;
     pub use calculator::ProgParser;
 }
 
@@ -31,10 +34,17 @@ pub enum Ast {
 }
 
 impl Ast {
-    pub fn eval(&self) -> Option<i32> {
+    pub fn eval(&self, symbols: &SymbolsTable) -> Option<i32> {
         match self {
             Number(val) => Some(*val),
-            Op(left, op, right) => Some(op.eval(left.eval()?, right.eval()?)),
+            Variable(id) => symbols.read(id.clone()),
+
+            Op(left, op, right) => {
+                let (left, right) = (left.eval(symbols)?, right.eval(symbols)?);
+
+                Some(op.eval(left, right))
+            }
+
             _ => None,
         }
     }
@@ -43,7 +53,11 @@ pub fn parse_op(left: Ast, op: OpCode, right: Ast) -> Ast {
     Op(Box::new(left), op, Box::new(right))
 }
 
-pub fn parse_assignment(identifier: Identifier, value: Ast) -> Ast {
+pub fn parse_assignment(symbols: &mut SymbolsTable, identifier: Identifier, value: Ast) -> Ast {
+    let value_result = value.eval(symbols).expect("Variable assigned to non value");
+
+    symbols.write(identifier.clone(), value_result);
+
     Assignment(identifier, Box::new(value))
 }
 

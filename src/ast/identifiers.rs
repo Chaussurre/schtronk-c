@@ -2,7 +2,7 @@ use std::fmt::Debug;
 use std::fmt::Display;
 use std::fmt::Formatter;
 
-#[derive(Eq, PartialEq)]
+#[derive(Eq, PartialEq, Clone, Hash)]
 pub struct Identifier {
     pub name: String,
 }
