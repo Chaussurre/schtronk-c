@@ -13,7 +13,7 @@ Assignation: Ast = {
 
 Expr: Ast = {
     #[precedence(level="1")]
-    Value,
+    Atom,
 
     #[precedence(level="2")] #[assoc(side="left")]
     <Expr> <OpCodeFactor> <Expr> => parse_op(<>),
@@ -31,11 +31,17 @@ OpCodeFactor: OpCode = {
     "/" => Div,
 }
 
-Value: Ast = {
-    Num,
+Atom: Ast = {
+    Value => Leaf(<>),
     <Identifier> => Variable(<>),
     "(" <Expr> ")",
 }
 
-Num: Ast = r"[0-9]+" => Number(<>.parse::<i32>().unwrap());
+Value: Value = {
+    Num,
+    String,
+}
+
+Num: Value = r"[0-9]+" => Value::parse_int(<>);
+String: Value = r#""([^\\"]|(\\"))*""# => Value::parse_str(<>);
 Identifier: Identifier = r"[a-zA-Z_]\w*" => Identifier::from(<>);

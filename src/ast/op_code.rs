@@ -10,13 +10,13 @@ pub enum OpCode {
 }
 
 impl OpCode {
-    pub fn eval(&self, left: i32, right: i32) -> i32 {
-        match self {
+    pub fn eval(&self, left: i32, right: i32) -> Value {
+        Value::INT(match self {
             Mul => left * right,
             Div => left / right,
             Add => left + right,
             Sub => left - right,
-        }
+        })
     }
 }
 

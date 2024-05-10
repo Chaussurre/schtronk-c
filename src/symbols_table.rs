@@ -1,9 +1,9 @@
 use crate::ast::parser_builder::Identifier;
+use crate::values::Value;
 use std::collections::HashMap;
-
 #[derive(Default)]
 pub struct SymbolsTable {
-    pub hashtable: HashMap<Identifier, i32>,
+    pub hashtable: HashMap<Identifier, Value>,
 }
 
 impl SymbolsTable {
@@ -11,11 +11,11 @@ impl SymbolsTable {
         SymbolsTable::default()
     }
 
-    pub fn write(&mut self, identifier: Identifier, value: i32) {
+    pub fn write(&mut self, identifier: Identifier, value: Value) {
         self.hashtable.insert(identifier, value);
     }
 
-    pub fn read(&self, identifier: Identifier) -> Option<i32> {
-        self.hashtable.get(&identifier).copied()
+    pub fn read(&self, identifier: Identifier) -> &Value {
+        self.hashtable.get(&identifier).unwrap_or(&Value::NOTHING)
     }
 }

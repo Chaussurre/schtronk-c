@@ -3,8 +3,10 @@ mod input_reader;
 mod symbols_table;
 #[cfg(test)]
 mod tests;
+mod values;
 
 use crate::input_reader::Input;
+use crate::values::Value;
 use ast::parser_user::*;
 use std::io::*;
 
@@ -25,8 +27,8 @@ fn main() {
 fn display_ast(result: Option<Ast>, stdout: &mut StdoutLock, symbols: &SymbolsTable) {
     if let Some(ast) = result {
         match ast.eval(symbols) {
-            None => stdout.write_fmt(format_args!("Ast: {}\nNo value\n", ast)),
-            Some(res) => stdout.write_fmt(format_args!("Ast: {}\nValue: {}\n", ast, res)),
+            Value::NOTHING => stdout.write_fmt(format_args!("Ast: {}\nNo value\n", ast)),
+            res => stdout.write_fmt(format_args!("Ast: {}\nValue: {}\n", ast, res)),
         }
         .unwrap();
     };
